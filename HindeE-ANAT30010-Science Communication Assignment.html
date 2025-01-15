@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dissertation on Oncology Treatment Induced Osteoporosis">
+    <title>How Cancer Treatments Affect Bone Health</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e9f3; /* Bone nude background */
+            color: #2e1a47; /* Dark purple text color */
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #3e2a47; /* Dark purple header */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f2d1f0; /* Soft pastel purple on hover */
+        }
+
+        /* Main Section */
+        section {
+            max-width: 1200px;
+            margin: 30px auto; /* Center content */
+            padding: 20px;
+            background-color: #f7f0f7; /* Light pastel purple background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #3e2a47;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+	#what-is-otio {
+	    max-width: 1400px;
+	    padding: 40px;
+	    margin: 30px auto;
+	}
+
+	#bone-remodelling {
+	    max-width: 900px;
+	    padding: 20px;
+	    margin: 30px auto;
+	}
+
+	#importance {
+	    max-width: 650px;
+	    padding: 40px;
+	    margin: 30px auto;
+	    margin-right: 15px;
+	}
+
+	#future {
+	    max-width: 650px;
+	    padding: 40px;
+	    margin: 30px auto;
+	    margin-left: 15px;
+	}
+
+	#find-out-more {
+	    max-width: 800px;
+	    padding: 40px;
+	    margin: 30px auto;
+	}
+
+	/* What is OTIO Section Styles */
+	.content-container {
+	    display: flex; /* Flexbox layout */
+	    gap: 20px; /* Space between the text and image */
+	    align-items: flex-start; /* Align items at the top */
+	}
+
+	.text-content {
+	    flex: 2; /* This takes up 2 parts of the total available space (2/3) */
+	    font-size: 1rem; /* Adjust font size */
+	}
+
+	.gif-content img {
+	    flex: 1; /* This takes up 1 parts of the total available space (1/3) */
+	    max-width: 80%; /* Prevents image from exceeding its container */
+	    transform: scale(1.4);
+	    transform-origin: center;
+	    box-shadow: none; /* Remove shadow */
+	    border: none; /* Remove any borders */
+	    outline: none; /* Remove outline */
+	}
+	
+	/* Adjust the image content below the gif */
+	.img-content {
+    	    text-align: right; /* Align the image to the right */
+    	    margin-top: 20px; /* Add some space above the image */
+	}
+
+	.img-content img {
+	    flex: 1;
+  	    max-width: 130%; /* Ensure the image does not exceed the container */
+    	    display: block;
+	    align-items: right;
+	    margin-right: 85px;
+	    margin-top: 300px;
+	    padding: 50px;
+	    box-shadow: none; /* Remove shadow */
+	    border: none; /* Remove any borders */
+	    outline: none; /* Remove outline */
+	}
+	
+	ul {
+    	    font-size: 1.1rem; /* This ensures the text size for all list items is the same as the rest of the text */
+    	    padding-left: 20px; /* Adds space to the left for the bullets */
+	}
+
+	li {
+    	    font-size: 1.1rem; /* Set the font size of the list items to match the rest of the text */
+    	    margin-bottom: 5px; /* Optional: Adjust the space between list items */
+	}
+
+	.underline {
+            text-decoration: underline;
+   	}
+
+	#unique-caption-1 {
+    	    width: 75%; 
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+ 
+	#unique-caption-2 {
+    	    width: 132.5%; 
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	
+	#unique-caption-3 {
+    	    width: 100; 
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+  	.fact-box {
+    	    border-left: 5px solid #2e1a47; /* Dark purple left border */
+    	    padding-left: 15px; /* Space between the border and the text */
+    	    margin: 20px 0; /* Add space above and below */
+    	    font-size: 16px; /* Adjust font size */
+    	    background-color: #d9bfd2; /* Light background for contrast */
+	    border-radius: 10px; /* Rounded corners */
+    	    color: #2e1a47; /* Text color */
+  	}
+
+  	.fact-box p {
+    	    font-style: italic; /* Make the text stand out more */
+  	}
+
+	/* Latest Research Section */
+	#latest-research {
+    	    position: relative; /* Allows absolute positioning inside the section */
+    	    padding: 40px;
+    	    margin: 30px auto;
+    	    background-color: #f7f0f7;
+    	    border-radius: 8px;
+    	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    	    max-width: 1200px;
+	    height: 1500px;
+	}
+
+	#latest-research {
+	    display: flex;
+	    gap: 20px; /* Space between the text and image */
+	}
+
+	#latest-research .text-content {
+	    width: 500px;
+	    font-size: 1rem; /* Adjust font size */
+	    margin-bottom: 20px; /* Add spacing between the text and the image */
+	    padding: 10px;
+	}
+
+	#latest-research .image-content {
+	    width: 400px;
+  	    max-width: 100%; /* Ensure the image does not exceed the container */
+    	    display: flex;
+	    align-items: left; /* Align image and caption to the left */
+	    margin-left: 85px;
+	    margin-top: 130px;
+	    padding: 10px;
+	    box-shadow: none; /* Remove shadow */
+	    border: none; /* Remove any borders */
+	    outline: none; /* Remove outline */
+	}
+
+	#latest-research .image-content img {
+    	    width: 100%; /* Ensure the image adjusts to the container */
+    	    max-width: 600px; /* Limit the image width */
+    	    border-radius: 8px;
+    	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	#latest-research .image-container figcaption {
+    	    text-align: center;
+    	    margin-top: 10px;
+    	    font-size: 1rem;
+    	    color: #2e1a47;
+	    width: 80%;
+	}
+
+	#pie-chart {
+	    width: 200%; /* Adjust as needed */
+    	    max-width: 400px; 
+	    margin-top: 80px;
+	    margin-right: 500px;
+	    margin-left: -40px;
+	    display: flex;	
+	    flex-direction: column;
+	    flex-shrink: 0;
+	    box-shadow: none; /* Remove shadow */
+	    border: none; /* Remove any borders */
+	    outline: none; /* Remove outline */
+	}
+
+	#bar-chart {
+	    position: absolute;
+	    bottom: 30px;
+	    left: 25%;
+    	    width: 100%; /* Adjust as needed */
+    	    max-width: 600px; 
+	    margin-top: 850px;
+	    margin-left: -50px;
+	    flex-direction: column;
+	}
+
+	/* Center the Bone Remodelling Heading */
+	#what-is-otio h2 {
+	    text-align: center; /* Centers the text */
+	    margin-bottom: 20px;
+	}
+
+	/* Center the Bone Remodelling Heading */
+	#bone-remodelling-process h2 {
+	    text-align: center; /* Centers the text */
+	    margin-bottom: 20px;
+	}
+
+	/* Center the Latest Research Heading */
+	#latest-research h2 {
+	    text-align: center; /* Centers the text */
+	    margin-bottom: 20px;
+	    margin-left: 370px;
+	    white-space: nowrap;
+	}
+
+	.quiz-container {
+	    background-color: #e9d1f0;
+	    padding: 10px;
+	    border: 1px solid #ddd;
+	    border-radius: 8px;
+	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	    max-width: 600px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 30px;
+	}
+
+	h2 {
+	    text-align: center;
+	    color: #3e2a47;
+	}
+
+	.question {
+	    font-size: 1.2em;
+	    margin-bottom: 15px;
+	}
+
+	.options li {
+	    margin-bottom: 10px;
+	}
+
+	.options input {
+	    margin-right: 10px;
+	}
+
+	.buttons {
+	    text-align: center;
+	    margin-top: 20px;
+        }
+
+	button {
+	    background-color: #2e1a47;
+	    color: white;
+	    padding: 10px 20px;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+	    font-size: 1em;
+	}
+
+	button#next {
+	    background-color: #3e2a47;
+	    color: white;
+	}
+
+	button#submit {
+	    background-color: #3e2a47;
+	    color: white;
+	    display: none;
+	}
+
+	button:hover {
+	    background-colour: #2e1a47;
+	}
+
+	.results {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #3e2a47;
+	}
+
+	.results .result-item {
+	    margin-top: 10px;
+	    font-size: 16px;
+	    color: #3e2a47;
+	}
+
+	.correct {
+	    color: green;
+	}
+
+	.incorrect {
+	    color: red;
+	}
+
+        section p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Flex Containers */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .flex-container section {
+            flex: 1 1 calc(45% - 20px); /* Two columns */
+            max-width: 650px; /* Prevent overly wide sections */
+        }
+
+	/* Styling the tooltip container */
+	.tooltip {
+	    position: relative;
+            display: inline-block;
+            cursor: pointer;
+	    font-weight: bold;
+            color: #2e1a47;
+        }
+
+        /* Tooltip text styling */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #2e1a47;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position tooltip above the word */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s; /* Fade-in effect */
+	    font-style: normal; /* Prevent italics */
+        }
+
+        /* Tooltip arrow */
+        .tooltip .tooltiptext::after {
+            content: '';
+            position: absolute;
+            top: 100%; /* Arrow at the bottom of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Show the tooltip text when hovering over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Counter Section */
+        .counter-container {
+            text-align: center;
+            background-color: #e9d1f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .counter {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #3e2a47;
+        }
+
+        .counter-description {
+            font-size: 1.2em;
+            color: #3e2a47;
+        }
+
+        /* Image and Video Styles */
+        img, video {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3e2a47;
+            color: white;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How Cancer Treatments Affect Bone Health</h1>
+    <p>Learn about how chemotherapy and other cancer treatments can lead to osteoporosis.</p>
+    <nav>
+        <ul>
+            <li><a href="#what-is-otio">What is OTIO?</a></li>
+	    <li><a href="#bone-remodelling">Bone Remodelling</a></li>
+	    <li><a href="#latest-research">Research</a></li>
+            <li><a href="#importance">Importance</a></li>
+            <li><a href="#future">Future</a></li>
+	    <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#find-out-more">Find Out More</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<section class="counter-container">
+    <p class="counter-description">Annual Cost of Osteoporosis Fracture Treatment (EU):</p>
+    <div class="counter" id="counter-eu">€0</div>
+    <p class="counter-description">Annual Number of Osteoporosis Fractures (Worldwide):</p>
+    <div class="counter" id="counter-fractures">0</div>
+</section>
+
+<section id="top-tip" style="background-color: #e9d1f0; padding: 4px 5px; border-left: 5px solid #2e1a47; margin-bottom: 2px; font-size: 14px; text-align: center; width: 900px;">
+    <h2 style="color: #2e1a47; margin-top: 0; font-size: 18px;">Top Tip!</h2>
+    <p>
+	Look out for <span style="color: #2e1a47; font-weight: bold;">bold words</span> on this page! 
+                If you hover over them, you'll see useful definitions to help you understand key concepts.
+    </p>
+</section>
+
+<section id="what-is-otio">
+    <h2>What is Oncology Treatment-Induced Osteoporosis?</h2>
+    <div class="content-container">
+	<!-- Text Content -->
+	<div class="text-content">
+	    <p>Cancer treatments save lives, but they can also come with unintended challenges, like <span class="tooltip">osteoporosis.
+		     <span class="tooltiptext">A condition that weakens bones, making them more likely to break.</span> 
+	    </span>
+		Oncology treatment induced osteoporosis (OTIO) occurs when cancer treatments, such as <span class="tooltip">chemotherapy
+		    <span class="tooltiptext">A cancer treatment using drugs to kill cancer cells.</span>
+		</span>, <span class="tooltip">hormonal therapy
+		    <span class="tooltiptext">A cancer treatment that blocks or lowers hormones like oestrogen or testosterone.</span>
+		</span>, and <span class="tooltip">radiotherapy
+		     <span class="tooltiptext">A cancer treatment using radiation to kill or damage cancer cells.</span>
+		</span>, negatively impact bone health, leading to a condition called <a href="https://pubmed.ncbi.nlm.nih.gov/17110632/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">osteoporosis</a>.</p>
+	    <p><span class="underline"><strong>How does OTIO Affect the Bones?</strong></span></p>
+	    <p><a href="https://pubmed.ncbi.nlm.nih.gov/18988698/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Healthy bones</a> have a thick <span class="tooltip">cortical bone
+		     <span class="tooltiptext">Layer of dense bone forming the outer shell.</span>
+		</span> layer and a strong <span class="tooltip">trabecular bone
+		     <span class="tooltiptext">Layer of mesh bone forming the inner compartment.</span> 
+		</span> layer filled with <span class="tooltip">collagen
+		     <span class="tooltiptext">A protein that adds structure to bone.</span>
+		</span> and other minerals. The inside looks like honeycomb, with blood vessels and bone marrow within the spaces. Osteoporosis causes these layers to become thin, leading to weaker, more fragile bones with a <a href="https://pubmed.ncbi.nlm.nih.gov/30464484/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">higher chance of breaking</a>, which can make life much harder for patients.</p>
+	    <p>This condition occurs when there's an <a href="https://pubmed.ncbi.nlm.nih.gov/17618270/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">imbalance</a> in the natural <span class="tooltip">bone remodelling process
+		     <span class="tooltiptext">The process where bones rebuild themselves.</span>
+		</span>, causing <span class="tooltip">osteoclasts
+		     <span class="tooltiptext">Bone cells that break down old or damaged bone.</span>
+		</span> to work harder than <span class="tooltip">osteoblasts
+		     <span class="tooltiptext">Bone cells that build new bone.</span>
+		</span>, leading to more breakdown of bone. 
+	    <p><span class="underline"><strong>How does it happen?</strong></span></p>
+	    <p>Cancer treatments target rapidly dividing cells to stop the growth and spread of tumours, but they can also interfere with bone health:</p>
+	    <ul>
+		<li><a href="https://pubmed.ncbi.nlm.nih.gov/36899284/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">Chemotherapy</a> - Can affect bone-forming and bone-removing cells, leading to bone loss. It may also affect the hormones that help maintain healthy bones.</li>
+		<li><a href="https://pubmed.ncbi.nlm.nih.gov/29572126/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Hormone therapy</a> – Can reduce levels of hormones (oestrogen and testosterone) that are important to maintain strong, healthy bones.</li>
+		<li><a href="https://pubmed.ncbi.nlm.nih.gov/25712619/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Radiotherapy</a> – Targeting cancer near bones can directly weaken the bones and increase the risk of fractures.</li>
+	    </ul>
+	    <p><span class="underline"><strong>Who is at risk?</strong></span></p>
+	    <p>Not all cancer patients will develop osteoporosis, but <a href="https://pubmed.ncbi.nlm.nih.gov/37455873/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">certain factors</a> increase the risk, including:</p>
+	    <ul>
+		<li>Age: older adults naturally experience some bone loss, making them more vulnerable.</li>
+		<li>Gender: women, especially postmenopausal women, are at higher risk due to lower oestrogen levels.</li>
+		<li>Type of cancer: Breast and prostate cancers, often treated with hormone therapies, have a stronger link to osteoporosis.</li>
+	    </ul>
+		
+	</div>
+	<!-- GIF Content -->
+	<div class="gif-content">
+	    <img src="Bone Cells.gif" alt="Cell Imbalance GIF" style="margin-top: 100px; width:100%; max-width:600px;">
+	    <figcaption id="unique-caption-1">An illustration showing the imbalance of bone cells in osteoporotic bones compared to healthy bones.</figcaption>
+	<!-- Healthy Vs Osteoporotic Image -->
+	<div class="img-content">
+	    <img src="Bones3.png" alt"Healthy vs Osteoporotic Img" style="margin-top: 1px; width:100%; max-width:450px;">
+	    <figcaption id="unique-caption-1">An illustration showing the inside of a healthy bone compared to a bone affected by osteoporosis.</figcaption>
+	</div>
+</section>
+
+<section id="bone-remodelling">
+    <h2>How Do Our Bones Rebuild Themselves?</h2>
+    <video width="640" height="360" controls poster="bone image.png"> /* Video aligned to left */
+        <source src="bone.mp4" type="video/mp4">
+        <source src="bone.webm" type="video/webm">
+        <p>Your browser does not support HTML video. You can <a href="bone.mp4">download the video here</a>.</p>
+    </video>
+</section>
+
+    <section id="latest-research">
+	    <div class="text-content">
+		<h2>Insights From OTIO Research</h2>
+            <p>Researchers are working hard to uncover ways to predict, prevent, and treat osteoporosis caused by cancer treatments. The first step in combating OTIO is understanding how cancer treatments impact bone health at a cellular level. A lot of research has already told us how this happens, for instance:</p>
+	<ul>
+	    <li>A <a href="https://pubmed.ncbi.nlm.nih.gov/26410578/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">2015 study</a> explains how some cancer treatments like <span class="tooltip">chemotherapy
+		    <span class="tooltiptext">A cancer treatment using drugs to kill cancer cells.</span>
+		</span>, <span class="tooltip">hormonal therapy
+		    <span class="tooltiptext">A cancer treatment that blocks or lowers hormones like oestrogen or testosterone.</span>
+		</span>, and <span class="tooltip">radiotherapy
+		     <span class="tooltiptext">A cancer treatment using radiation to kill or damage cancer cells.</span>
+		</span>, can weaken bones by affecting how they grow and repair themselves, leading to osteoporosis. For example, <a href="https://pubmed.ncbi.nlm.nih.gov/36899284/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">chemotherapy can harm the cells</a> that build new bone, while <a href="https://pubmed.ncbi.nlm.nih.gov/29572126/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">hormonal therapy can lower important hormones</a>, such as oestrogen and testosterone, that help keep bones strong.</li>
+	</ul>
+	<p><span class="underline"><strong>Short-Term Benefits of OTIO Research</strong></span></p>
+	<p>Ongoing research into OTIO directly benefits cancer patients. By understanding how cancer treatments affect bone health, we can:</p>
+	<ul>
+	    <li><a href="https://pubmed.ncbi.nlm.nih.gov/35779210/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Prevent or treat osteoporosis earlier</a> during treatment.</li> 
+	    <li>Reduce fractures, pain, and complications during recovery.</li>
+	</ul> 
+	<p>This way, doctors can better manage the risk of fractures and pain associated with OTIO. But this research doesn't just improve patient outcomes, it also helps healthcare providers deliver better care by addressing the bone health of cancer patients alongside their treatment. </p>
+
+	<p><span class="underline"><strong>Long-Term Benefits of OTIO Research</strong></span></p>
+	<p>In the long run, OTIO research has the potential to improve healthcare policies by helping policymakers prioritise osteoporosis prevention and encourages the incorporation of bone management as a standard part of cancer treatment guidelines. By raising awareness, we can prioritise <a href="https://pubmed.ncbi.nlm.nih.gov/33864145/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">early detection, prevention, and improved treatment plans</a> for these patients, improving their overall quality of life.</p>
+	</div>
+	<div class="image-content">
+	<div id="pie-chart">
+	    <img src="Pie Chart.png" alt="Pie Chart Image" style="width:100%; max-width:900px; margin-right: 200px;">
+	<figcaption id="unique-caption-3">Pie chart showing that <a href="https://pubmed.ncbi.nlm.nih.gov/24113837/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">66% of women</a> at risk of osteoporosis (OP) in the UK miss out on life-changing therapy due to late diagnosis and low public awareness.</figcaption>
+	</div>
+<div id="bar-chart">
+	    <img src="Chart.png" alt="Current Research Image" style="width:200%; max-width:800px; align-items: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+	    <figcaption id="unique-caption-2">Bar chart showing the percentage loss of <span class="tooltip">bone mineral density 
+		    <span class="tooltiptext">The measure of the amount of minerals (like calcium) in your bones - shows how strong and dense your bones are.</span>
+		</span> (BMD) at the <span class="tooltip">lumbar spine
+		    <span class="tooltiptext">Lower section of the spine.</span>
+		</span> each year. <i>(PreW - Premenopausal Women).</i></figcaption>
+        </div>
+</section>
+
+<div class="flex-container">
+    <section id="importance">
+        <h2>Why is it important to learn about?</h2>
+        <p>OTIO is an increasingly important problem that affects cancer patients, healthcare systems, and society as a whole. <a href="https://pubmed.ncbi.nlm.nih.gov/35079919/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">By 2034</a>, the population of people aged over 75 years in the UK is expected to increase to 42% in men and 31% in women. With an increasingly aging population comes a larger population living with osteoporosis, and the amount of osteoporotic fractures every year is assumed to increase in the UK (from 138,000 in 2019 to 665,000 in 2034).</p>
+ 	<p><span class="underline"><strong>Impact on Cancer Patients</strong></span></p>
+	<p>Some cancer treatments lead to weakened bones, putting patients at risk of:</p>
+	<ul>
+	    <li>Fractures</li>
+	    <li>Pain</li>
+	    <li>Loss of independence</li>
+	</ul>
+	<p>These complications can make it much harder for patients to recover from cancer and carry out everyday activities, significantly reducing their <a href="https://pubmed.ncbi.nlm.nih.gov/33864145/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">quality of life</a>.</p>
+
+	<p><span class="underline"><strong>Impact on Healthcare Systems</strong></span></p>
+	<p><span class="tooltip">Osteoporotic fractures
+		    <span class="tooltiptext">Fractures that happen because of osteoporosis.</span>
+		</span> place heavy <a href="https://pubmed.ncbi.nlm.nih.gov/33437750/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">pressure on healthcare systems</a>, leading to billions of euros spent each year on treatment, recovery, and long-term care. This burden is expected to rise as <a href="https://pubmed.ncbi.nlm.nih.gov/31532726/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">more patients are surviving cancer</a>, resulting in a growing population at risk of OTIO and living with this condition. Therefore, <a href="https://pubmed.ncbi.nlm.nih.gov/33864145/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">increasing awareness</a> in society and among clinicians is vital.</p>
+	<div class="fact-box">
+	    <p><strong>Fact:</strong> In <a href="https://pubmed.ncbi.nlm.nih.gov/24113837/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Europe</a> alone, the cost of osteoporosis-related fractures is over <strong>€37 billion</strong> each year!</p>
+	</div>
+    </section>
+
+    <section id="future">
+        <h2>Future Directions in OTIO Research</h2>
+        <p><span class="underline"><strong>Improving Diagnosis</strong></span></p>
+	    <p>Identifying patients at risk of osteoporosis early can prevent severe complications and allows clinicians to intervene sooner, reducing the risk of fractures and improving patient outcomes.</p>
+	<p>Recent research has explored the development of <span class="tooltip">biomarkers
+	<span class="tooltiptext">Molecules that can be measured to detect changes in the body.</span>
+	</span> that can detect changes in bone metabolism early. A <a href="https://pubmed.ncbi.nlm.nih.gov/31912328/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">2020 study</a> explored the use of <span class="tooltip">bone regulatory markers
+	<span class="tooltiptext">Substances that give information about bone health.</span>
+	</span> to predict bone loss and fracture risks in breast cancer patients undergoing <span class="tooltip">Aromatase Inhibitor
+	<span class="tooltiptext">A type of hormone therapy.</span>
+  	</span> therapy.</p>
+	<p>Additionally, finding improved <a href="https://pubmed.ncbi.nlm.nih.gov/36195368/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">diagnostic tools</a> to predict fracture risk and osteoporosis development in cancer patients is critical. Promising advances include diagnostic tools similar to <span class="tooltip">DXA scans
+	<span class="tooltiptext">Special x-ray tests that measure how dense bone is.</span>
+	</span> and the <span class="tooltip">FRAX tool
+	<span class="tooltiptext">Tool that estimates risk of fractures.</span>
+	</span> that can be administered <a href="https://pubmed.ncbi.nlm.nih.gov/36512057/" target="_blank" style="colour: #2e1a47; text-decoration: underline;">for cancer patients</a>.</p>
+	<p><span class="underline"><strong>Improving Treatments</strong></span></p>
+	<p>Exploring therapies like drugs that stimulate bone growth and new bone-protecting agents that don't interfere with cancer care is critical. For example, clinical trials, like the <a href="https://pubmed.ncbi.nlm.nih.gov/21987386/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">Z-FAST trial</a>, have proven <span class="tooltip">bisphosphonates
+	<span class="tooltiptext">Drugs that treat and prevent osteoporosis.</span>
+	</span> to be an effective treatment to increase BMD in cancer patients. However, only <a href="https://pubmed.ncbi.nlm.nih.gov/31596961/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">one 2020 study</a> has confirmed a reduction of fractures following the treatment, therefore further investigation into effective treatments is beneficial.</p>
+	<p>Continued exploration in these areas is essential to ensure that <a href="https://pubmed.ncbi.nlm.nih.gov/39270364/" target="_blank" style="colour: #3e2a47; text-decoration: underline;">bone health in cancer patients is a priority</a> and that they not only survive their illness but also recover in the long term with healthier bones and fewer complications.</p>
+    </section>
+</div>
+
+<div class="quiz-container">
+    <h2>Quiz!</h2>
+    <div id="quiz">
+      <div class="question"></div>
+      <ul class="options"></ul>
+      <div class="buttons">
+        <button id="next">Next</button>
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+    <div class="results" id="results"></div>
+  </div>
+
+<section id="find-out-more">
+    <h2>Find Out More!</h2>
+    <p>If you want to learn more, check out these websites:</p>
+    <ul>
+	<li>
+	    <a href="https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/bone-health" target="_blank">
+	        Macmillan Cancer Support: Bone Health and Cancer
+	    </a>
+	</li>
+	<li>
+	    <a href="https://www.niams.nih.gov/health-topics/osteoporosis" target="_blank">
+		National Institute of Health: Osteoporosis
+	    </a>
+	</li>
+	<li>
+	    <a href="https://theros.org.uk/information-and-support/osteoporosis/causes/breast-cancer-treatments/" target="_blank">
+		Royal Osteoporosis Society: Breast Cancer Treatments and Bone Health
+	    </a>
+	</li>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 By Evie Hinde.</p>
+</footer>
+
+<script>
+function countUp(elementId, targetValue, duration, isCurrency = false) {
+    const element = document.getElementById(elementId);
+    let startValue = 0;
+    const increment = targetValue / (duration / 10);
+    const interval = setInterval(() => {
+        startValue += increment;
+        if (startValue >= targetValue) {
+            clearInterval(interval);
+            element.textContent = isCurrency
+                ? "€" + targetValue.toLocaleString()
+                : targetValue.toLocaleString();
+        } else {
+            element.textContent = isCurrency
+                ? "€" + Math.round(startValue).toLocaleString()
+                : Math.round(startValue).toLocaleString();
+        }
+    }, 10);
+}
+
+// EU Counter with Euro Sign
+countUp("counter-eu", 37000000000, 3000, true); 
+
+// Worldwide Fractures Counter without Euro Sign
+countUp("counter-fractures", 8900000, 3000, false);
+</script>
+
+<script>
+    const quizData = [
+      {
+        question: "1. What is the condition called when bones become weak and brittle?",
+        choices: ["Diabetes", "Asthma", "Osteoporosis"],
+        correct: 2
+      },
+      {
+        question: "2. Why is bone health during cancer treatment important?",
+        choices: ["It prevents fractures and improves quality of life", "It ensures long term health and mobility", "Both of the above"],
+        correct: 2
+      },
+      {
+        question: "3. How many fractures are caused by osteoporosis worldwide, each year?",
+        choices: ["50.3 million", "8.9 million", "1.7 million"],
+        correct: 1
+      },
+      {
+        question: "4. Why are cancer patients at a higher risk of osteoporosis?",
+        choices: ["Cancer treatments can affect bone cells", "They don't eat enough chocolate", "They use too much suncream"],
+        correct: 0
+      },
+      {
+        question: "5. How much is spent treating osteoporosis in the EU, annually?",
+        choices: ["29 million", "37 billion", "5 billion"],
+        correct: 1
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let answers = [];
+
+    const questionEl = document.querySelector(".question");
+    const optionsEl = document.querySelector(".options");
+    const nextButton = document.getElementById("next");
+    const submitButton = document.getElementById("submit");
+    const resultsEl = document.getElementById("results");
+
+    function loadQuestion() {
+      const currentQuestion = quizData[currentQuestionIndex];
+      questionEl.textContent = currentQuestion.question;
+      optionsEl.innerHTML = "";
+      currentQuestion.choices.forEach((choice, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <label>
+            <input type="radio" name="answer" value="${index}">
+            ${choice}
+          </label>
+        `;
+        optionsEl.appendChild(li);
+      });
+    }
+
+    function getSelectedAnswer() {
+      const selectedOption = document.querySelector("input[name='answer']:checked");
+      if (selectedOption) {
+        return parseInt(selectedOption.value);
+      }
+      return null;
+    }
+
+    nextButton.addEventListener("click", () => {
+      const selectedAnswer = getSelectedAnswer();
+      if (selectedAnswer === null) {
+        alert("Please select an answer!");
+        return;
+      }
+
+      // Record the answer
+      answers.push({
+        question: quizData[currentQuestionIndex].question,
+        selected: selectedAnswer,
+        correct: quizData[currentQuestionIndex].correct,
+        choices: quizData[currentQuestionIndex].choices
+      });
+
+      if (selectedAnswer === quizData[currentQuestionIndex].correct) {
+        score++;
+      }
+
+      currentQuestionIndex++;
+
+      if (currentQuestionIndex < quizData.length - 1) {
+        loadQuestion();
+      } else {
+        loadQuestion();
+        nextButton.style.display = "none";
+        submitButton.style.display = "inline-block";
+      }
+    });
+
+    submitButton.addEventListener("click", () => {
+      const selectedAnswer = getSelectedAnswer();
+      if (selectedAnswer === null) {
+        alert("Please select an answer!");
+        return;
+      }
+
+      // Record the final answer
+      answers.push({
+        question: quizData[currentQuestionIndex].question,
+        selected: selectedAnswer,
+        correct: quizData[currentQuestionIndex].correct,
+        choices: quizData[currentQuestionIndex].choices
+      });
+
+      if (selectedAnswer === quizData[currentQuestionIndex].correct) {
+        score++;
+      }
+
+      document.getElementById("quiz").style.display = "none";
+      displayResults();
+    });
+
+    function displayResults() {
+      resultsEl.innerHTML = `<h2>You scored ${score} out of ${quizData.length}!</h2>`;
+      answers.forEach((answer, index) => {
+        const resultItem = document.createElement("div");
+        resultItem.classList.add("result-item");
+
+        const isCorrect = answer.selected === answer.correct;
+        const statusClass = isCorrect ? "correct" : "incorrect";
+
+        resultItem.innerHTML = `
+          <p><strong>Question ${index + 1}:</strong> ${answer.question}</p>
+          <p class="${statusClass}">Your Answer: ${
+          answer.choices[answer.selected] || "No answer selected"
+        }</p>
+          ${
+            !isCorrect
+              ? `<p class="correct-answer">Correct Answer: ${answer.choices[answer.correct]}</p>`
+              : ""
+          }
+        `;
+
+        resultsEl.appendChild(resultItem);
+      });
+    }
+
+    // Initialize the quiz
+    loadQuestion();
+  </script>
+
+</body>
+</html>
